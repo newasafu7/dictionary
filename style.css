@@ -2,6 +2,18 @@
     font-family: 'ranjanalipi';
     src: url(fonts/ranjana.ttf);
 }
+@font-face {
+    font-family: 'prachalit1';
+    src: url(fonts/prachalit1.TTF);
+}
+@font-face {
+    font-family: 'prachalit2';
+    src: url(fonts/prachalit2.ttf);
+}
+@font-face {
+    font-family: 'brahmi';
+    src: url(fonts/bramhi.ttf);
+}
 :root{
     font-size: 62.5%;
     --primary-color: red;
@@ -160,6 +172,15 @@ nav.sticky{
     margin-top: .5em;
     width: 100%;
     text-align: center;
+}
+.prachalit1{
+    font-family: 'prachalit1';
+}
+.prachalit2{
+    font-family: 'prachalit2';
+}
+.brahmi{
+    font-family: 'brahmi';
 }
 .nepali-word{
     font-size: 2.5em;
