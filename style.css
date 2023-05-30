@@ -68,6 +68,7 @@ body{
 }
 #navbar ul li a {
     color: var(--secondary-color);
+    text-decoration: none;
     transition: var(--transition);
 }
 #navbar ul li:not(.active) :hover{
