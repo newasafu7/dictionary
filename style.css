@@ -152,6 +152,7 @@ nav.sticky{
     height: 2.5em;
     width: 25em;
     padding-left: .5em;
+    border-radius: 2px;
 }
 .words{
     display: flex;
