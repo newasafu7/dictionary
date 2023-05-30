@@ -18,6 +18,7 @@
     font-size: 62.5%;
     --primary-color: red;
     --secondary-color: rgb(20, 20, 20);
+    --back-color: aliceblue;
 }
 *{
     margin: 0;      padding: 0;
@@ -118,7 +119,7 @@ nav.sticky{
     }
    
     #headBar.active{
-        background-color: hsl(0, 0%, 13%);
+        background-color: var(--back-color);
         height: 100vh;
         display: inline-block;
     }
@@ -139,37 +140,54 @@ nav.sticky{
         margin: .3em;
     }
 }
+.search-section{
+    margin-top: 4rem;
+    padding-top: 1.5em;
+    display: flex;
+    justify-content: center;
+    background-color: var(--back-color);
+}
+.search-section input{
+    height: 2.5em;
+    width: 25em;
+    padding-left: .5em;
+}
 .words{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
+    background-color: var(--back-color);
+    padding: .1em;
 }
 
 .box{
     background-color: rgb(213, 220, 226);
     width: 80vw;
     max-width: 65em;
-    margin-top: 5rem;
-    border: 2px black solid;
-    padding: 5px;
+    margin-top: 2rem;
+    border: .2em black solid;
+    border-radius: .3rem;
+    box-shadow: 0px 4px 1em rgba(84, 123, 143, 0.493);
     padding-bottom: .7rem;
 }
 
 .newari-word{
-    font-size: 3.5em;
-    padding-left: .2em;
+    font-size: 4.5em;
+    padding-left: .1em;
     font-family: 'ranjanalipi';
 }
 .type{
-    font-size: 2em;
-    color: rgb(66, 74, 80);
+    font-size: 1.9em;
+    font-style: italic;
+    padding: 0 0 .1em .4em;
+    color: rgba(66, 74, 80, 0.849);
+    filter: blur(.3px);
 }
 .eng-nep{
     display: flex;
     justify-content: space-around;
-    margin-top: .5em;
+    margin: .7em 0 .5em 0;
     width: 100%;
     text-align: center;
 }
@@ -182,15 +200,29 @@ nav.sticky{
 .brahmi{
     font-family: 'brahmi';
 }
-.nepali-word{
-    font-size: 2.5em;
-    border-right: .1rem rgb(37, 37, 37) solid ;
+.nepali-word,.english-word{
     width: 100%;
+    font-weight: 200;
+}
+.nepali-word{
+    font-size: 2.7em;
+    padding: 0;
+    /* border-right: .1rem rgba(255, 255, 255, 0.8) solid ; */
+    border-right: .1rem rgba(0, 0, 0, 0.8) solid ;
+    /* border-top: 1px rgb(179, 197, 211) solid ; */
+    /* box-shadow: -1px -4px 5px rgba(255, 255, 255, 0.288);
+    box-shadow: 1px -4px 5px rgba(131, 123, 123, 0.123); */
 }
 .english-word{
-    font-size: 2.5em;
-    width: 100%;
-    border-left: .1rem rgb(136, 75, 75) solid ;
+    font-size: 2.2em;
+    /* border-left: .1rem rgba(255, 255, 255, 0.8) solid ; */
+    border-left: .1rem rgba(0, 0, 0, 0.8) solid ;
+    /* border-bottom: 1px rgb(179, 197, 211) solid ; */
+    /* box-shadow: 1px 4px 5px rgba(131, 123, 123, 0.123); */
+}
+.meaning,.example{
+    margin-left: .3em;
+    color: rgba(0, 0, 0, 0.910);
 }
 .meaning{
     font-size: 20px;
